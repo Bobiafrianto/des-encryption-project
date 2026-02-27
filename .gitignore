@@ -1,0 +1,9 @@
+__pycache__/
+app/__pycache__/
+venv/
+.env
+.env.*
+app/static/uploads/
+logs/
+*.log
+config.py

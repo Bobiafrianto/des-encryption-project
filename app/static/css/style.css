@@ -1,0 +1,197 @@
+/* ============================= */
+/* NAVBAR FIXED (STABIL)         */
+/* ============================= */
+
+
+.navbar {
+  padding: 0.25rem 1rem;
+}
+
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: normal;
+}
+
+main.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 48px;
+  width: auto;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.hero-text {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-title {
+  font-family: "Quantico", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-text {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-title {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.footer-text {
+  color: white;
+}
+
+/* ============================= */
+/* COMPACT NAVBAR (FINAL)        */
+/* ============================= */
+
+.navbar.navbar-compact {
+  padding: 0.25rem 1rem;
+}
+
+/* Mobile */
+@media (max-width: 991.98px) {
+  .navbar.navbar-compact {
+    min-height: 68px;
+  }
+
+  .navbar.navbar-compact .navbar-logo {
+    height: 24px;
+  }
+
+  .navbar.navbar-compact .navbar-toggler {
+    padding: 0.15rem 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-box {
+    padding: 1.25rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .btn-hero {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .navbar.navbar-compact {
+    min-height: 110px;
+  }
+
+  .navbar.navbar-compact .navbar-logo {
+    height: 48px;
+  }
+}
+
+/* brand wrapper */
+.navbar.navbar-compact .navbar-brand {
+  padding: 0;
+  line-height: 1;
+}
+
+/* ============================= */
+/* MOBILE DROPDOWN MENU          */
+/* ============================= */
+
+@media (max-width: 991.98px) {
+  .mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #212529;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobile-nav .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .mobile-nav .nav-link {
+    padding: 0.6rem 1.25rem;
+  }
+}
+
+
+/* ============================= */
+/* LOADING ANIMATION             */
+/* ============================= */
+
+.loading-text {
+  animation: fadeText 1.2s ease-in-out infinite alternate;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Desktop / Tablet */
+@media (min-width: 768px) {
+  .hero-box {
+    padding: 3rem 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+  }
+
+  .btn-hero {
+    font-size: 1rem;
+    padding: 0.6rem 1.25rem;
+  }
+
+  .section-title {
+    margin-bottom: 3rem;
+  }
+}
+
+
+
+@keyframes fadeText {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
